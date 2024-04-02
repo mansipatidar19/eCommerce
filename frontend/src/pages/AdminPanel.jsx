@@ -53,8 +53,8 @@ function AdminPanel() {
 
   return (
     <div>
-      <h1 className="text-info pb-2 mt-0 text-center">Admin Panel</h1>
-      <h3 className="bg-info text-center text-info py-1 pb-2 bg-opacity-10 border-bottom border-1 border-info">
+      <h1 className="text-secondary pb-2 mt-0 text-center">Admin Panel</h1>
+      <h3 className="bg-secondary text-center text-secondary py-1 pb-2 bg-opacity-10 border-bottom border-1 border-secondary">
         All Users
       </h3>
       <div className="mx-5 my-3">
@@ -80,7 +80,7 @@ function AdminPanel() {
                     {/* Redirecting to the userEditForm */}
                     <Link
                       to={`/editUser/${user._id}`}
-                      className="text-decoration-none text-info"
+                      className="text-decoration-none text-secondary"
                     >
                       <i className="fa-solid fa-user-pen fa-lg"></i>
                     </Link>
@@ -91,7 +91,7 @@ function AdminPanel() {
         </table>
       </div>
 
-      <h3 className="bg-info text-center text-info py-1 pb-2 bg-opacity-10 border-bottom border-1 border-info mt-5 mb-0">
+      <h3 className="bg-secondary text-center text-secondary py-1 pb-2 bg-opacity-10 border-bottom border-1 border-secondary mt-5 mb-0">
         All Orders
       </h3>
       {orders.length > 0 ? (
@@ -122,7 +122,7 @@ function AdminPanel() {
                     <select
                       value={order.status}
                       onChange={(e) => handleStatusChange(order._id, e)}
-                      className="form-select text-info form-select-sm"
+                      className="form-select text-secondary form-select-sm"
                     >
                       <option value="Pending">Pending</option>
                       <option value="Processing">Processing</option>
@@ -137,7 +137,7 @@ function AdminPanel() {
           </table>
         </div>
       ) : (
-        <div className="text-white bg-info text-center mt-0 py-3">
+        <div className="text-white bg-secondary text-center mt-0 py-3">
           <h5>OOPS!</h5>
           <cite>No Orders Found</cite>
         </div>

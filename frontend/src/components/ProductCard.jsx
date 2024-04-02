@@ -49,14 +49,14 @@ function ProductCard({ product }) {
             style={styleImage}
           />
           <div className="card-body">
-            <h5 className="card-title text-info fw-semibold">
+            <h5 className="card-title text-secondary fw-semibold">
               {product.title}
             </h5>
             <h6 className="card-text">Price: ₹{product.price}</h6>
             {/* Redirecting to product details component */}
             <Link
               to={`/productDetails/${product._id}`}
-              className="btn bg-info text-info bg-opacity-10 border border-info border-1 rounded mx-2"
+              className="btn bg-secondary text-secondary bg-opacity-10 border border-secondary border-1 rounded mx-2"
             >
               <i className="fa-solid fa-cart-plus me-2"></i>
               More...
@@ -66,13 +66,13 @@ function ProductCard({ product }) {
               <>
                 <Link
                   to={`/editProduct/${product._id}`}
-                  className="btn btn-info me-2 mt-lg-2"
+                  className="btn btn-secondary me-2 mt-lg-2"
                 >
                   <i className="fa-solid fa-user-pen fa-md me-1"></i>
                 </Link>
                 <Link
                   to="/allBooks"
-                  className="btn btn-info mt-lg-2"
+                  className="btn btn-secondary mt-lg-2"
                   onClick={(e) => {
                     e.preventDefault();
                     handleDeleteProduct(product._id);

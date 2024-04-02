@@ -36,20 +36,20 @@ function Login() {
   return (
     <div className="container">
       <div className="text-center">
-        <h2 className="fw-bold my-4 d-inline-flex border-bottom border-info border-3 rounded px-3 pb-1">
+        <h2 className="fw-bold my-4 d-inline-flex border-bottom border-secondary border-3 rounded px-3 pb-1">
           Log-in Form
         </h2>
       </div>
       <div className="mb-4">
         <label
           htmlFor="exampleFormControlInput"
-          className="form-label text-info fw-semibold"
+          className="form-label text-secondary fw-semibold"
         >
           E-mail
         </label>
         <input
           type="email"
-          className="form-control border-info"
+          className="form-control border-secondary"
           id="exampleFormControlInput"
           placeholder="admin@internshala.com"
           value={userData.email}
@@ -64,13 +64,13 @@ function Login() {
       <div className="mb-4">
         <label
           htmlFor="exampleFormControlInput1"
-          className="form-label text-info fw-semibold"
+          className="form-label text-secondary fw-semibold"
         >
           Password
         </label>
         <input
           type="password"
-          className="form-control border-info"
+          className="form-control border-secondary"
           id="exampleFormControlInput1"
           placeholder="123#Alphabet"
           value={userData.password}
@@ -84,7 +84,7 @@ function Login() {
       </div>
       <button
         type="submit"
-        className="mt-2 btn bg-info bg-opacity-10 border border-2 rounded border-info text-info fw-bold mb-3 w-100"
+        className="mt-2 btn bg-secondary bg-opacity-10 border border-2 rounded border-secondary text-secondary fw-bold mb-3 w-100"
         onClick={(e) => {
           e.preventDefault();
           login();

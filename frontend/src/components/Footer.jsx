@@ -18,7 +18,7 @@ function Footer() {
                 <li className="nav-item mb-1">
                   <Link
                     to="/"
-                    className="nav-link p-0 text-body-info custom-footer-link"
+                    className="nav-link p-0 text-body-secondary custom-footer-link"
                   >
                     WonderLand
                   </Link>
@@ -31,7 +31,7 @@ function Footer() {
                 <li className="nav-item mb-1">
                   <Link
                     to="/allBooks"
-                    className="nav-link p-0 text-body-info custom-footer-link"
+                    className="nav-link p-0 text-body-secondary custom-footer-link"
                   >
                     Bookshelf
                   </Link>
@@ -48,7 +48,7 @@ function Footer() {
                     <li className="nav-item mb-1">
                       <Link
                         to="/cart"
-                        className="nav-link p-0 text-body-info custom-footer-link"
+                        className="nav-link p-0 text-body-secondary custom-footer-link"
                       >
                         My Bookmarks
                       </Link>
@@ -61,7 +61,7 @@ function Footer() {
                     <li className="nav-item mb-1">
                       <Link
                         to="/userProfile"
-                        className="nav-link p-0 text-body-info custom-footer-link"
+                        className="nav-link p-0 text-body-secondary custom-footer-link"
                       >
                         My Profile
                       </Link>
@@ -73,22 +73,22 @@ function Footer() {
           </div>
 
           {/* Row for social media icons */}
-          <div className="d-flex flex-column flex-sm-row pt-4 border-top justify-content-center text-info mx-4">
+          <div className="d-flex flex-column flex-sm-row pt-4 border-top justify-content-center text-secondary mx-4">
             <p>© Mansi, Inc. all rights reserved.</p>
             <ul className="list-unstyled d-flex">
               <li className="ms-3">
                 <Link to="/" className="link-body-emphasis">
-                  <i className="fa-brands fa-x-twitter fa-lg text-info"></i>
+                  <i className="fa-brands fa-x-twitter fa-lg text-secondary"></i>
                 </Link>
               </li>
               <li className="ms-3">
                 <Link to="/" className="link-body-emphasis">
-                  <i className="fa-brands fa-instagram fa-lg text-info"></i>
+                  <i className="fa-brands fa-instagram fa-lg text-secondary"></i>
                 </Link>
               </li>
               <li className="ms-3">
                 <Link to="/" className="link-body-emphasis">
-                  <i className="fa-brands fa-amazon fa-lg text-info"></i>
+                  <i className="fa-brands fa-amazon fa-lg text-secondary"></i>
                 </Link>
               </li>
             </ul>

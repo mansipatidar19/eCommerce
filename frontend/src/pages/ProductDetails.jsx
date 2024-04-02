@@ -67,7 +67,7 @@ function ProductDetails() {
             className="rounded-5 ms-md-5 mx-auto shadow-lg"
           />
         </div>
-        <div className="col-12 col-md-8 mt-md-3 ms-5 ms-md-0 ps-md-0 text-info">
+        <div className="col-12 col-md-8 mt-md-3 ms-5 ms-md-0 ps-md-0 text-secondary">
           <h3 className="fw-bold">Title: {product.title}</h3>
           <h5 className="my-3">Cost: ₹{product.price}</h5>
           <cite>~ {product.description}</cite>
@@ -76,7 +76,7 @@ function ProductDetails() {
           {user ? (
             <>
               <button
-                className="btn bg-info bg-opacity-10 border border-2 rounded border-info text-info mt-1"
+                className="btn bg-secondary bg-opacity-10 border border-2 rounded border-secondary text-secondary mt-1"
                 onClick={handleAddToCart}
               >
                 Add to Cart
@@ -85,7 +85,7 @@ function ProductDetails() {
           ) : (
             <>
               <Link to="/login">
-                <button className="btn bg-info bg-opacity-10 border border-2 rounded border-info text-info mt-1">
+                <button className="btn bg-secondary bg-opacity-10 border border-2 rounded border-secondary text-secondary mt-1">
                   Please Login, To Add To Cart
                 </button>
               </Link>

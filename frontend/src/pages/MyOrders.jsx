@@ -38,13 +38,13 @@ const MyOrders = () => {
 
   return (
     <div>
-      <h2 className="bg-info text-info bg-opacity-10 border border-info border-1 rounded text-center py-1 pb-2 mx-5">
+      <h2 className="bg-secondary text-secondary bg-opacity-10 border border-secondary border-1 rounded text-center py-1 pb-2 mx-5">
         My Orders
       </h2>
       {/* If no orders then, telling the user no orders found */}
       {orders.length === 0 && (
         <>
-          <h6 className="text-info bg-info bg-opacity-10 text-center">
+          <h6 className="text-secondary bg-secondary bg-opacity-10 text-center">
             No Orders Available
           </h6>
         </>
@@ -53,7 +53,7 @@ const MyOrders = () => {
         {/* Iteration through all the orders */}
         {orders.map((order, index) => (
           <div key={order._id} className="row ms-2 mt-3">
-            <h3 className="text-info bg-info bg-opacity-10 text-center">
+            <h3 className="text-secondary bg-secondary bg-opacity-10 text-center">
               Order: {index + 1}
             </h3>
             <div className="col-md-4 col-12">
@@ -68,28 +68,28 @@ const MyOrders = () => {
             </div>
             <div className="col-md-4 col-12 d-flex flex-column justify-content-center">
               <p>
-                <span className="fw-bold text-info">Status: </span>
+                <span className="fw-bold text-secondary">Status: </span>
                 {order.status}
               </p>
               <p>
-                <span className="fw-bold text-info">Total Amount:</span> ₹
+                <span className="fw-bold text-secondary">Total Amount:</span> ₹
                 {order.totalamount}
               </p>
               <p>
-                <span className="fw-bold text-info">Payment Method: </span>
+                <span className="fw-bold text-secondary">Payment Method: </span>
                 {order.paymentMethod}
               </p>
             </div>
             <div className="col-md-4 col-12 d-flex flex-column justify-content-center">
               <p>
-                <span className="fw-bold text-info">Title: </span>
+                <span className="fw-bold text-secondary">Title: </span>
                 {order.products.product.title}
               </p>
               <p>
-                <span className="fw-bold text-info">Quantity: </span>
+                <span className="fw-bold text-secondary">Quantity: </span>
                 {order.products.quantity}
               </p>
-              <button className="btn btn-info me-md-5">
+              <button className="btn btn-secondary me-md-5">
                 {/* Cancelling the order using it's id */}
                 <Link
                   onClick={() => {

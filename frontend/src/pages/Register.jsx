@@ -40,18 +40,18 @@ function Register() {
     <div className="container">
       {/* Registration form */}
       <div className="text-center">
-        <h2 className="fw-bold my-4 d-inline-flex border-bottom border-info border-3 rounded px-3 pb-1">
+        <h2 className="fw-bold my-4 d-inline-flex border-bottom border-secondary border-3 rounded px-3 pb-1">
           Registration Form
         </h2>
       </div>
       <div className="mb-4">
         {/* Input field for first name */}
-        <label htmlFor="name" className="form-label text-info fw-semibold">
+        <label htmlFor="name" className="form-label text-secondary fw-semibold">
           Name
         </label>
         <input
           type="text"
-          className="form-control border-info"
+          className="form-control border-secondary"
           id="name"
           placeholder="Sonam"
           value={formData.name}
@@ -62,13 +62,13 @@ function Register() {
         {/* Input field for email */}
         <label
           htmlFor="Email"
-          className="form-label text-info fw-semibold"
+          className="form-label text-secondary fw-semibold"
         >
           Email
         </label>
         <input
           type="email"
-          className="form-control border-info"
+          className="form-control border-secondary"
           id="Email"
           placeholder="admin@internshala.com"
           value={formData.email}
@@ -79,13 +79,13 @@ function Register() {
         {/* Input field for password */}
         <label
           htmlFor="Password"
-          className="form-label text-info fw-semibold"
+          className="form-label text-secondary fw-semibold"
         >
           Password
         </label>
         <input
           type="password"
-          className="form-control border-info"
+          className="form-control border-secondary"
           id="Password"
           placeholder="120#$Alphabets!"
           value={formData.password}
@@ -98,13 +98,13 @@ function Register() {
         {/* Input field for last name */}
         <label
           htmlFor="lastName"
-          className="form-label text-info fw-semibold"
+          className="form-label text-secondary fw-semibold"
         >
           Address
         </label>
         <input
           type="text"
-          className="form-control border-info"
+          className="form-control border-secondary"
           id="lastName"
           placeholder="Neemuch, M.P."
           value={formData.address}
@@ -116,7 +116,7 @@ function Register() {
       {/* Button for registration */}
       <button
         type="submit"
-        className="mt-2 btn bg-info bg-opacity-10 border border-2 rounded border-info text-info fw-bold mb-3 w-100"
+        className="mt-2 btn bg-secondary bg-opacity-10 border border-2 rounded border-secondary text-secondary fw-bold mb-3 w-100"
         onClick={(e) => {
           handleSubmit(e); // Call register function on button click
         }}

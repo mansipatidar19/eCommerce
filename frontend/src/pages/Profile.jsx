@@ -53,23 +53,23 @@ function Profile() {
       {user && (
         <div className="ms-5">
           <div className="d-flex mb-3">
-            <h2 className="text-info text-center">User Profile</h2>
+            <h2 className="text-secondary text-center">User Profile</h2>
             <Link
-              className="mt-2 ms-3 text-info"
+              className="mt-2 ms-3 text-secondary"
               onClick={handleShowModal}
             >
               <i className="fa-solid fa-user-pen fa-xl"></i>
             </Link>
           </div>
           <p>
-            <span className="fw-bold text-info me-2">Name: </span>
+            <span className="fw-bold text-secondary me-2">Name: </span>
             {user.name}
           </p>
           <p>
-            <span className="fw-bold text-info me-2">Email:</span> {user.email}
+            <span className="fw-bold text-secondary me-2">Email:</span> {user.email}
           </p>
           <p>
-            <span className="fw-bold text-info me-2">Address:</span>{" "}
+            <span className="fw-bold text-secondary me-2">Address:</span>{" "}
             {user.address}
           </p>
         </div>
@@ -96,8 +96,8 @@ function UpdateProfileModal({
     <div className="modal fade show" tabIndex="-1" style={{ display: "block" }}>
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content border-3">
-          <div className="modal-header bg-info bg-opacity-10">
-            <h1 className="modal-title fs-5 text-info" id="updateProfileModalLabel">
+          <div className="modal-header bg-secondary bg-opacity-10">
+            <h1 className="modal-title fs-5 text-secondary" id="updateProfileModalLabel">
               Update Profile
             </h1>
             <button
@@ -110,7 +110,7 @@ function UpdateProfileModal({
           <div className="modal-body">
             <form className="row g-3" onSubmit={handleUpdateProfile}>
               <div className="col-md-6">
-                <label htmlFor="userName" className="form-label fw-medium text-info">
+                <label htmlFor="userName" className="form-label fw-medium text-secondary">
                   Name :
                 </label>
                 <input
@@ -123,7 +123,7 @@ function UpdateProfileModal({
                 />
               </div>
               <div className="col-md-6">
-                <label htmlFor="userEmail" className="form-label fw-medium text-info">
+                <label htmlFor="userEmail" className="form-label fw-medium text-secondary">
                   Email :
                 </label>
                 <input
@@ -136,7 +136,7 @@ function UpdateProfileModal({
                 />
               </div>
               <div className="col-12">
-                <label htmlFor="userAddress" className="form-label fw-medium text-info">
+                <label htmlFor="userAddress" className="form-label fw-medium text-secondary">
                   Address :
                 </label>
                 <input
@@ -154,14 +154,14 @@ function UpdateProfileModal({
           <div className="modal-footer border-0">
             <button
               type="button"
-              className="btn btn-outline-info"
+              className="btn btn-outline-secondary"
               onClick={handleCloseModal}
             >
               Cancel
             </button>
             <button
               type="submit"
-              className="btn btn-info"
+              className="btn btn-secondary"
               onClick={handleUpdateProfile}
             >
               Update Changes

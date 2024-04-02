@@ -59,54 +59,54 @@ const ProductEditForm = () => {
 
   return (
     <div>
-      <h2 className="text-info py-2 text-center">Edit Product</h2>
+      <h2 className="text-secondary py-2 text-center">Edit Product</h2>
       <form
         onSubmit={handleSubmit}
         className="d-flex justify-content-center flex-column"
       >
-        <div className="mx-auto bg-info text-info bg-opacity-10 border border-info border-1 rounded px-5 py-3">
+        <div className="mx-auto bg-secondary text-secondary bg-opacity-10 border border-secondary border-1 rounded px-5 py-3">
           <div className="my-3">
-            <label className="me-3 text-info">Title:</label>
+            <label className="me-3 text-secondary">Title:</label>
             <input
               type="text"
-              className="text-info"
+              className="text-secondary"
               name="title"
               value={formData.title}
               onChange={handleInputChange}
             />
           </div>
           <div className="my-3">
-            <label className="me-3 text-info">Description:</label>
+            <label className="me-3 text-secondary">Description:</label>
             <input
               type="text"
-              className="text-info"
+              className="text-secondary"
               name="description"
               value={formData.description}
               onChange={handleInputChange}
             />
           </div>
           <div className="my-3">
-            <label className="me-3 text-info">Quantity:</label>
+            <label className="me-3 text-secondary">Quantity:</label>
             <input
               type="number"
-              className="text-info"
+              className="text-secondary"
               name="quantity"
               value={formData.quantity}
               onChange={handleInputChange}
             />
           </div>
           <div className="my-3">
-            <label className="me-3 text-info">Price:</label>
+            <label className="me-3 text-secondary">Price:</label>
             <input
               type="number"
-              className="text-info"
+              className="text-secondary"
               name="price"
               value={formData.price}
               onChange={handleInputChange}
             />
           </div>
           <div className="my-3 d-flex flex-column">
-            <button type="submit" className="btn btn-outline-info">
+            <button type="submit" className="btn btn-outline-secondary">
               Update Product
             </button>
           </div>

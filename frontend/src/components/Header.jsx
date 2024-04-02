@@ -58,8 +58,8 @@ function Header() {
         <nav className="navbar navbar-expand-lg navbar-custom">
           <div className="container-fluid mx-lg-4">
             <Link className="navbar-brand d-inline-flex me-lg-5" to="/">
-              <i className="fa-solid fa-book-open-reader text-info fa-xl mt-3 me-3"></i>
-              <h1 className="mt-1 fs-4 text-info me-5">
+              <i className="fa-solid fa-book-open-reader text-secondary fa-xl mt-3 me-3"></i>
+              <h1 className="mt-1 fs-4 text-secondary me-5">
                 Books World
                 {/* Adding the user's name in header */}
                 {user && ` for ${user.name}`}!
@@ -84,14 +84,14 @@ function Header() {
                 <div className="input-group ms-lg-5">
                   <input
                     type="text"
-                    className="form-control text-info border-info border-end-0"
+                    className="form-control text-secondary border-secondary border-end-0"
                     placeholder="Search"
                     value={searchQuery}
                     // Handling search query
                     onChange={handleSearchChange}
                   />
                   <button
-                    className="btn btn-outline-info border-start-0"
+                    className="btn btn-outline-secondary border-start-0"
                     type="button"
                     onClick={handleSearch}
                   >
@@ -113,7 +113,7 @@ function Header() {
               >
                 <div className="modal-dialog modal-lg">
                   <div className="modal-content">
-                    <div className="modal-header bg-info">
+                    <div className="modal-header bg-secondary">
                       <h5
                         className="modal-title text-white"
                         id="searchModalLabel"
@@ -148,11 +148,11 @@ function Header() {
                                 <div className="col-12 col-md-8">
                                   <Link
                                     to={`/productDetails/${result._id}`}
-                                    className="text-info text-decoration-none fs-5 fw-semibold"
+                                    className="text-secondary text-decoration-none fs-5 fw-semibold"
                                   >
                                     {result.title}
                                   </Link>
-                                  <p className="fs-6 text-info">
+                                  <p className="fs-6 text-secondary">
                                     {result.description}
                                   </p>
                                 </div>
@@ -161,7 +161,7 @@ function Header() {
                           ))}
                         </ul>
                       ) : (
-                        <p className="fs-6 text-info fw-semibold">
+                        <p className="fs-6 text-secondary fw-semibold">
                           {" "}
                           OOPS! No results found
                         </p>
@@ -196,7 +196,7 @@ function Header() {
                   <>
                     <li className="nav-item me-1">
                       <Link
-                        className="nav-link text-info login-btn allHover mt-3 mt-sm-3 mt-lg-0"
+                        className="nav-link text-secondary login-btn allHover mt-3 mt-sm-3 mt-lg-0"
                         to="/userProfile"
                       >
                         <i className="fa-solid fa-xl fa-user"></i>
@@ -216,12 +216,12 @@ function Header() {
                     </li>
                     {admin && (
                       <>
-                        <li className="nav-item bg-info text-info bg-opacity-10 border border-info border-1 rounded me-2">
+                        <li className="nav-item bg-secondary text-secondary bg-opacity-10 border border-secondary border-1 rounded me-2">
                           <Link className="nav-link fs-6 px-1" to="/adminPanel">
                             Admin
                           </Link>
                         </li>
-                        <li className="nav-item bg-info text-info bg-opacity-10 border border-info border-1 rounded">
+                        <li className="nav-item bg-secondary text-secondary bg-opacity-10 border border-secondary border-1 rounded">
                           <Link className="nav-link fs-6 px-1" to="/addProduct">
                             Add Product
                           </Link>
@@ -236,7 +236,7 @@ function Header() {
         </nav>
 
         {/* Second Navbar having conditional rendering */}
-        <nav className="navbar custom-navbar mb-4 bg-info">
+        <nav className="navbar custom-navbar mb-4 bg-secondary">
           <ul className="nav mx-auto pe-5 py-0">
             <li className="nav-item">
               <Link to="/" className="nav-link text-white py-0 pe-3">

@@ -101,13 +101,13 @@ function Cart() {
 
   return (
     <div className="container-fluid">
-      <h2 className="bg-info text-info bg-opacity-10 border border-info border-1 rounded text-center py-1 pb-2 mx-5">
+      <h2 className="bg-secondary text-secondary bg-opacity-10 border border-secondary border-1 rounded text-center py-1 pb-2 mx-5">
         Shopping Cart
       </h2>
       {/* If no products are there */}
       {cartProducts.length === 0 ? (
         <div className="d-flex justify-content-center mt-5">
-          <cite className="text-info fw-medium fs-5">
+          <cite className="text-secondary fw-medium fs-5">
             Your cart is empty!
           </cite>
         </div>
@@ -124,13 +124,13 @@ function Cart() {
                   style={styleImage}
                 />
               </div>
-              <div className="col-md-9 col-12 text-info">
+              <div className="col-md-9 col-12 text-secondary">
                 <h4 className="mb-2">{item.title}</h4>
                 <p className="mb-2">Price: ₹{item.price}</p>
                 <cite>~ {item.description}</cite>
                 <div className="mt-3 d-flex align-items-center">
                   <button
-                    className="btn bg-info text-info bg-opacity-10 border border-info border-1 rounded me-2"
+                    className="btn bg-secondary text-secondary bg-opacity-10 border border-secondary border-1 rounded me-2"
                     onClick={() => handleDecreaseQuantity(item._id)}
                   >
                     -
@@ -141,14 +141,14 @@ function Cart() {
                     )?.quantity || 0}
                   </span>
                   <button
-                    className="btn bg-info text-info bg-opacity-10 border border-info border-1 rounded mx-2"
+                    className="btn bg-secondary text-secondary bg-opacity-10 border border-secondary border-1 rounded mx-2"
                     onClick={() => handleIncreaseQuantity(item._id)}
                   >
                     +
                   </button>
                 </div>
                 <button
-                  className="btn btn-info mt-3 px-5"
+                  className="btn btn-secondary mt-3 px-5"
                   onClick={() => handleRemoveItem(item._id)}
                 >
                   Remove
@@ -159,7 +159,7 @@ function Cart() {
           {/* Redirecting to the checkout screen to place an order */}
           <div className="text-end me-5">
             <Link to="/checkOut">
-              <button className="btn bg-info text-info bg-opacity-10 border border-info border-1 rounded fw-medium">
+              <button className="btn bg-secondary text-secondary bg-opacity-10 border border-secondary border-1 rounded fw-medium">
                 Checkout
               </button>
             </Link>

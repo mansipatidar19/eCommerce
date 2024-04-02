@@ -23,7 +23,7 @@ function Slider() {
   return (
     <>
       <div className="container my-5 pt-1">
-        <h2 className="slider-head border-bottom pb-2 px-3 text-info">
+        <h2 className="slider-head border-bottom pb-2 px-3 text-secondary">
           <i className="fa-solid fa-book me-3"></i>Our Bookshelf
         </h2>
       </div>
@@ -67,14 +67,14 @@ function Slider() {
                     alt={product.title}
                   />
                   <div className="card-body">
-                    <h5 className="card-title fw-bold text-info">
+                    <h5 className="card-title fw-bold text-secondary">
                       {product.title}
                     </h5>
                     <p className="card-text fs-5">₹{product.price}</p>
                     {/* Redirecting to products details page */}
                     <Link
                       to={`/productDetails/${product._id}`}
-                      className="btn btn-info"
+                      className="btn btn-secondary"
                     >
                       <i className="fa-solid fa-bookmark me-2"></i>
                       More...

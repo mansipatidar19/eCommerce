@@ -64,34 +64,34 @@ function UserEditForm() {
 
   return (
     <div>
-      <h2 className="text-info py-2 text-center">Edit User</h2>
+      <h2 className="text-secondary py-2 text-center">Edit User</h2>
       <form
         onSubmit={handleUpdateUser}
-        className="mx-5 row bg-info px-3 py-4 bg-opacity-10 border border-1 border-info rounded"
+        className="mx-5 row bg-secondary px-3 py-4 bg-opacity-10 border border-1 border-secondary rounded"
       >
         <div className="col-6">
-          <label htmlFor="userName" className="text-info me-3">
+          <label htmlFor="userName" className="text-secondary me-3">
             Name :
           </label>
           <input
             type="text"
             id="userName"
             name="name"
-            className="text-info fw-medium"
+            className="text-secondary fw-medium"
             value={formData.name}
             onChange={handleFormChange}
           />
         </div>
 
         <div className="col-6">
-          <label htmlFor="userEmail" className="text-info me-3">
+          <label htmlFor="userEmail" className="text-secondary me-3">
             Email :
           </label>
           <input
             type="email"
             id="userEmail"
             name="email"
-            className="text-info fw-medium"
+            className="text-secondary fw-medium"
             value={formData.email}
             onChange={handleFormChange}
           />
@@ -99,26 +99,26 @@ function UserEditForm() {
 
         <div className="row">
           <div className="col my-2">
-            <label htmlFor="userAddress" className="text-info me-3">
+            <label htmlFor="userAddress" className="text-secondary me-3">
               Address :
             </label>
             <input
               type="text"
               id="userAddress"
               name="address"
-              className="text-info fw-medium"
+              className="text-secondary fw-medium"
               value={formData.address}
               onChange={handleFormChange}
             />
           </div>
           <div className="col my-2">
-            <label htmlFor="isAdmin" className="text-info me-3">
+            <label htmlFor="isAdmin" className="text-secondary me-3">
               Admin :
             </label>
             <select
               id="isAdmin"
               name="admin"
-              className="text-info fw-medium"
+              className="text-secondary fw-medium"
               value={formData.admin}
               onChange={handleFormChange}
             >
@@ -129,7 +129,7 @@ function UserEditForm() {
         </div>
         <button
           type="submit"
-          className="btn btn-outline-info mt-2 fw-bold"
+          className="btn btn-outline-secondary mt-2 fw-bold"
         >
           Update User
         </button>

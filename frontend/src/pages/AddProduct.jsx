@@ -50,69 +50,69 @@ function AddProduct() {
 
   return (
     <div>
-      <h2 className="text-info pb-2 text-center">Add Product</h2>
+      <h2 className="text-secondary pb-2 text-center">Add Product</h2>
       <form
         onSubmit={handleSubmit}
         className="d-flex justify-content-center flex-column"
       >
-        <div className="mx-auto bg-info text-info bg-opacity-10 border border-info border-1 rounded px-5 py-3">
+        <div className="mx-auto bg-secondary text-secondary bg-opacity-10 border border-secondary border-1 rounded px-5 py-3">
           <div className="my-3">
-            <label className="text-info me-2">Title:</label>
+            <label className="text-secondary me-2">Title:</label>
             <input
               type="text"
               name="title"
-              className="text-info"
+              className="text-secondary"
               value={formData.title}
               onChange={handleInputChange}
               required
             />
           </div>
           <div className="my-3">
-            <label className="text-info me-2">Description:</label>
+            <label className="text-secondary me-2">Description:</label>
             <input
               type="text"
               name="description"
-              className="text-info"
+              className="text-secondary"
               value={formData.description}
               onChange={handleInputChange}
               required
             />
           </div>
           <div className="my-3">
-            <label className="text-info me-2">Quantity:</label>
+            <label className="text-secondary me-2">Quantity:</label>
             <input
               type="number"
               name="quantity"
-              className="text-info"
+              className="text-secondary"
               value={formData.quantity}
               onChange={handleInputChange}
               required
             />
           </div>
           <div className="my-3">
-            <label className="text-info me-2">Price:</label>
+            <label className="text-secondary me-2">Price:</label>
             <input
               type="number"
               name="price"
-              className="text-info"
+              className="text-secondary"
               value={formData.price}
               onChange={handleInputChange}
               required
             />
           </div>
           <div className="my-3">
-            <label className="text-info me-2">Image:</label>
+            <label className="text-secondary me-2">Image:</label>
             <input
               type="file"
               accept="image/*"
               name="image"
-              className="text-info"
+              className="text-secondary"
               onChange={handleImageChange}
               required
             />
           </div>
           <div className="mb-3 d-flex flex-column mt-4">
-            <button type="submit" className="btn btn-outline-info">
+            <button type="submit" className="btn btn-outline-secondary">
               Add Product
             </button>
           </div>

@@ -63,8 +63,8 @@ function Checkout() {
 
   return (
     <div className="container">
-      <div className="mx-auto bg-info text-info bg-opacity-10 border border-info border-1 rounded px-5 py-3">
-        <h2 className=" text-center text-info py-2 mb-4 border-bottom border-1 border-info ">
+      <div className="mx-auto bg-secondary text-secondary bg-opacity-10 border border-secondary border-1 rounded px-5 py-3">
+        <h2 className=" text-center text-secondary py-2 mb-4 border-bottom border-1 border-secondary ">
           Checkout
         </h2>
         <div className="mb-4">
@@ -74,7 +74,7 @@ function Checkout() {
             value={shippingAddress}
             onChange={(e) => setShippingAddress(e.target.value)}
             placeholder="Enter your shipping address"
-            className="form-control text-info"
+            className="form-control text-secondary"
           />
         </div>
         <div className="mb-4">
@@ -82,7 +82,7 @@ function Checkout() {
           <select
             value={paymentMethod}
             onChange={handlePaymentMethodChange}
-            className="form-select text-info"
+            className="form-select text-secondary"
           >
             <option value="COD">Cash on Delivery</option>
             <option value="PayPal">PayPal</option>
@@ -94,7 +94,7 @@ function Checkout() {
         </div>
         <div className="mb-3 d-flex flex-column mt-4">
           <button
-            className="btn btn-outline-info fw-medium"
+            className="btn btn-outline-secondary fw-medium"
             onClick={handlePlaceOrder}
           >
             Place Order
