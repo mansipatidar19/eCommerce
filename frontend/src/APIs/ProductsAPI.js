@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api/product";
+const API_URL = "https://ecommerce-server-paod.onrender.com/api/product";
 
 // API to get product details
 export const fetchProductDeatils = async (productId) => {

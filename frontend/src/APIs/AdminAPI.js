@@ -1,6 +1,6 @@
 import axios from "axios"; // Importing axios for making HTTP requests
 
-const API_URL = "http://localhost:8080/api/admin"; // Base URL for admin API
+const API_URL = "https://ecommerce-server-paod.onrender.com/api/admin"; // Base URL for admin API
 
 const adminAPI = {
   getUserById: async (userId, token) => {
@@ -10,7 +10,7 @@ const adminAPI = {
         headers: { Authorization: `Bearer ${token}` }, 
       });
       return response.data;
-    } catch (error) {
+    } catch (error) { 
       throw error;
     }
   },
